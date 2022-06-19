@@ -1,0 +1,7 @@
+.sass-cache/
+node_modules/
+dart-sass/*
+/public/img/*
+*.json
+*.png
+*.svg
