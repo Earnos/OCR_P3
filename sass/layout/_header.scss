@@ -1,0 +1,39 @@
+ .header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__img {
+      @include flex-center;
+      margin: 25px 0 15px 0;
+   }
+   &__input {
+      width: 100%;
+      text-align: center;
+      background-color: darken($background-color, 5%);
+      padding: 5px 0 5px 60px;
+      box-shadow: inset 0px 8px 6px -6px #888;
+   }
+   &__logo {
+      width: 50%;
+   }
+   &--input {
+      border: none;
+      padding: 10px;
+      background: transparent;
+      font-size: 1em;
+      font-weight: 700;
+   }
+   &__infos {
+      background: $background-color;
+      text-align: center;
+      padding: 5%;
+   }
+   &__infosTitle {
+      font-size: 1.7em;
+      font-weight: 700;
+   }
+   &__infosSubtitle {
+      font-size: 1.2em;
+      font-weight: 400;
+   }
+ }

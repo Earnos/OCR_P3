@@ -8,15 +8,37 @@
       src="https://kit.fontawesome.com/f4d122f5f5.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./public/css/main.css" />
     <title>Acceuil</title>
   </head>
   <body>
-    <header class="header__container">
-      <label for="name"></label>
-      <img src="./public/img/logo/ohmyfood.png" alt="logo oh my food" />
-
-      <input type="text" value="" />
+    <header class="header">
+      <div class="header__img">
+        <img
+          class="header__logo"
+          src="./public/img/logo/ohmyfood.png"
+          alt="logo oh my food"
+        />
+      </div>
+      <div class="header__input">
+        <label for="name"
+          ><i class="fa-solid fa-location-dot"></i
+          ><input class="header--input" type="text" value="Paris, Belleville"
+        /></label>
+      </div>
+      <div class="header__infos">
+        <h1 class="header__infosTitle">Réservez le menu qui vous convient</h1>
+        <h2 class="header__infosSubtitle">
+          Découvrez des restaurants d'exceptions, séléctionnés par nos soins.
+        </h2>
+        <button class="header__btn">Explorer nos restaurants</button>
+      </div>
     </header>
   </body>
 </html>

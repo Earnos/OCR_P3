@@ -1,19 +1,7 @@
-@import "./utils/variables"
-
-*, html {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-$primary-color: #FFFF;
-$secondary-color: #AAAAAA;
-
-body {
-    background: var($secondary-color);
-}
-
-.titleHead__Title {
-    color: var($primary-color);
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/functions";
+@import "./base/typography";
+@import "./base/base";
+@import "./layout/header";
+@import "./Components/buttons";
