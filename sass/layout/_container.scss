@@ -1,0 +1,34 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__infos {
+        background: $background-color;
+        text-align: center;
+        padding: 5% 8% 10% 8%;
+        margin-bottom: 8%;
+    }
+    &__infosTitle {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 20px;
+    }
+    &__infosSubtitle {
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+}
+
+.fonctionnement {
+    margin-right: 15px;
+}
+
+.resto {
+    background: $background-color;
+    padding-bottom: 50px;
+    &__title {
+        margin: 15% 0 15px 15px;
+        padding-top: 12%;
+    }
+}

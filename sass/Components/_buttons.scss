@@ -1,11 +1,56 @@
-.header__btn {
-    padding: 15px;
+/*Buttons Page d'Acceuil*/
+
+.search__btn {
+    padding: 18px;
     border-radius: 45px;
     background: $secondary-color;
     border: none;
     color: #FFFF;
-    -webkit-box-shadow: -4px 10px 15px 0px rgba(0,0,0,0.2); 
-    box-shadow: -4px 10px 15px 0px rgba(0,0,0,0.2);
-    margin-bottom: 25px;
+    @include acceuil-boxShadow;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    background: linear-gradient(-190deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);
+    //background: linear-gradient(170deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);
     }
 
+.fonctionnement { 
+    &__title {
+        margin: 10px 0 20px 15px;
+    }
+    &__btnbox {
+        @include flex-column;
+        row-gap: 15px;
+        margin-left: 0;
+    }
+    &__btn {
+        padding: 25px 20px;
+        @include acceuil-boxShadow;
+        border-radius: 25px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        width: 85%;
+        cursor: pointer;
+        border: none;
+        background: $background-color;
+    }
+    &__btnAll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.fa-1, .fa-2, .fa-3 {
+    padding: 5px 9px;
+    color: #FFFF;
+    background: rgb(129, 67, 158);
+    border-radius: 100%;
+    transform: translateX(15px);
+}
+.fa-mobile-screen::before, .fa-list::before, .fa-store::before {
+    padding: 0 20px;
+}
+
+/*Buttons Page Menu*/

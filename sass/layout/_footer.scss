@@ -1,0 +1,27 @@
+.footer {
+    background: rgb(73, 73, 73);
+    &__section {
+        padding: 20px;
+    }
+    &__title {
+        font-family: "Shrikhand", cursive;
+        font-weight: 400;
+        color: #FFF;
+        margin-bottom: 15px;
+
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+}
+
+.fa-handshake-angle, .fa-utensils {
+    color: #FFF;
+    width: 8px;
+}
