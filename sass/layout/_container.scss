@@ -1,3 +1,5 @@
+/*container Page d'Acceuil */
+
 .search {
     display: flex;
     flex-direction: column;
@@ -31,4 +33,58 @@
         margin: 15% 0 15px 15px;
         padding-top: 12%;
     }
+}
+
+#acceuil-container {
+    background-color: #FFFF;
+}
+
+
+/*container menu1*/
+
+.container {
+    background: $background-color;
+    &__img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+    &__menus {
+    background: $background-color;
+    border-radius: 30px 30px 0 0;
+    transform: translateY(-60px);
+    width: 100%; 
+    padding: 15px;
+    }
+    &__menuTitleBox {
+        @include flex-center;
+        justify-content: space-between;
+        padding: 15px 0 0 0;       
+    }
+    &__menuTitle {
+        @include cursive-font;
+        font-weight: normal;
+        font-size: 1.9em;
+    }
+}
+.section {
+    &__title {
+    width: 45px;
+    overflow: visible;
+    font-size: 1.1em;
+    font-weight: 400;
+    border-bottom: 3px solid $tertiary-color;
+    padding: 4px 0;
+    margin-bottom: 15px;
+    margin-top: 10%;
+    } 
+}
+
+
+
+/*heart icone du menu title box*/
+
+.menuTitle__heart {
+    transform: scale(1.5);
+    margin-right: 10px;
 }

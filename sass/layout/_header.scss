@@ -1,6 +1,6 @@
  .header {
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    align-items: center;
    &__img {
       @include flex-center;
@@ -13,13 +13,5 @@
       background: $background-color;
       text-align: center;
       padding: 5%;
-   }
-   &__infosTitle {
-      font-size: 1.7em;
-      font-weight: 700;
-   }
-   &__infosSubtitle {
-      font-size: 1.2em;
-      font-weight: 400;
    }
  }
