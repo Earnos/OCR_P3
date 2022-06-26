@@ -5,6 +5,7 @@
     border-radius: 45px;
     background: $secondary-color;
     border: none;
+    cursor: pointer;
     color: #FFFF;
     @include acceuil-boxShadow;
     margin-top: 20px;
@@ -34,12 +35,15 @@
         cursor: pointer;
         border: none;
         background: $background-color;
+        &:hover {
+            background: lighten($primary-color, 30%);
+        }
     }
     &__btnAll {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }   
 }
 
 .fa-1, .fa-2, .fa-3 {
@@ -91,3 +95,12 @@
 #commandBtn {
     width: 180px;
 } 
+
+
+
+
+// @if $function-btn {
+//     background: lighten($primary-color , 30%);
+// } @else .fa-mobile-screen::before{
+//     color: $primary-color;
+// }
