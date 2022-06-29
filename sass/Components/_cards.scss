@@ -34,6 +34,9 @@
         text-decoration: none;
         color: #000000;
     }
+    &__heart {
+      z-index: 2;
+    }
 }
 
 
@@ -42,6 +45,7 @@
         margin-right: 15px;
     }
     &:active {
+        font-weight: 0;
         color: #ff0000;
         transform-origin: bottom;
         animation: heart 300ms 0.1s both;
