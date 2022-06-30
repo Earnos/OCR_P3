@@ -36,6 +36,9 @@
         background: $background-color;
         &:hover {
             background: lighten($primary-color, 30%);
+            > .fa-mobile-screen, .fa-list, .fa-store {
+                color: $primary-color;
+            }
         }
     }
     &__btnAll {
@@ -56,12 +59,6 @@
     padding: 0 20px;
 }
 
-/*Buttons Page Menu*/
-
-.section__btn {
-    background: #FFFF;
-    cursor: pointer;
-}
 
 /* Buttons Page Menus */
 
@@ -72,6 +69,8 @@
         border-radius: 15px;
         margin-bottom: 4%;
         @include acceuil-boxShadow;
+        background: #FFFF;
+        cursor: pointer;
     }
 }
 
@@ -84,12 +83,25 @@
     &__title {
         margin-bottom: 4px;
     }
+    &--translate1 {
+        animation: button-translateY  800ms 100ms;
+    }
+    &--translate2 {
+        animation: button-translateY  800ms 200ms;
+    }
+    &--translate3 {
+        animation: button-translateY  800ms 300ms;
+    }
 }
 
-/* TEST animations check on menu1 button 1*/
+
+/* infos & Check buttons menu pages*/
+
 .textBox {
     &__titles {
         padding: 10px;
+        overflow: hidden;
+        white-space:nowrap;
     }
     &__infos {
         display: flex;
@@ -99,11 +111,12 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 5px;
+        padding: 22px 10px 0 10px;
         font-weight: 700;
     }
     &__check {
         width: 0;
+        transition: width 800ms;
         background: $tertiary-color;
         border-radius: 0 15px 15px 0; 
         @include flex-center;
@@ -113,32 +126,15 @@
 
 .fa-circle-check {
     visibility: collapse;
-}
-/* check button Test with keyframes */
-@keyframes rotate-check {
-    0%, 5%{opacity: 0;}
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(360deg);visibility: visible;}
-}
-
-   @keyframes checked {
-       0% {width: 0;}
-       100% {width: 60px;}
-  }
+    }
 
  .btn__textBox:hover > .textBox__infos > .textBox__check {
-            animation: checked 1000ms both;
+            width: 66px;
+            transition: width .6s;
             & > .fa-circle-check {
-                animation:  rotate-check 1000ms both;
+                animation:  rotate-check 700ms both;
             }
 }
-/*With transition test*/
-// .btn__textBox:hover > .textBox__infos {
-//     transform: translateX(-66px);
-//     transition: transform 600ms;
-// }
-
 
 /* Button commander */
 
