@@ -12,6 +12,10 @@
     font-size: 14px;
     font-weight: 700;
     background: linear-gradient(-190deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);
+    &:hover {
+        background: linear-gradient(-190deg, #FF46C1 2%, #FF79DA 40%, #9F49B9 100%);
+        box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.38);
+    }
     }
 
 .fonctionnement { 
@@ -92,6 +96,9 @@
     &--translate3 {
         animation: button-translateY  800ms 300ms;
     }
+    &--translate4 {
+        animation: button-translateY 800ms 400ms;
+    } 
 }
 
 
