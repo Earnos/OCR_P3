@@ -4,7 +4,7 @@
    align-items: center;
    &__img {
       @include flex-center;
-      margin: 25px 0 15px 0;
+      margin: 25px 0 25px 0;
    }
    &__logo {
       width: 50%;

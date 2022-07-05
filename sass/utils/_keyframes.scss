@@ -19,7 +19,7 @@
 @keyframes heart {
     0% { opacity: calc(0) ;}
     50% { opacity: calc(0.5); }
-    100% { opacity: calc(1); font-weight: 900; }
+    100% { opacity: calc(1); }
 }
 
 /* Menu page buttons */
@@ -39,4 +39,11 @@
   0%, 15% {opacity: 0;}
   0% {transform: translateY(50px);}
   100% {transform: translateY(0);}
+}
+
+/* button gradient and box shadows animations */
+
+@keyframes gradient {
+  0% {}
+  100%{ background: linear-gradient(-190deg, #FF46C1 2%, #FF79DA 40%, #9F49B9 100%); box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.38);}
 }

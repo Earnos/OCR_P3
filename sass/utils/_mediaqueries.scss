@@ -1,0 +1,83 @@
+/* Media queries for accueil page */
+
+@media only screen and (min-width: $layout-breakpoint-desktop) {
+    .container .fonctionnement{
+        &__title {
+            @include flex-center;
+            margin-bottom: 50px;
+        }
+        &__btnbox {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        &__btn {
+            width: 100%;
+            @include flex-center;
+        }
+    }
+    .container .resto {
+        padding-bottom: 100px;
+        &__title {
+            @include flex-center;
+            padding-top: 40px;
+            margin-top: 5%;
+            
+        }
+        &__cardBox {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            > a {
+                width: 50%;
+            }
+        }
+    }
+    .container .search__infos {
+        margin-bottom: 40px;
+        padding-bottom: 5%;
+    }
+    .cards__link > .cards > img {
+        object-position: center;
+    }
+    .footer__section {
+        text-align: center;
+    }
+}
+
+/* Media for menus pages */
+
+@media only screen and (min-width: $layout-breakpoint-tablette) and (max-width: $layout-breakpoint-desktop) {
+    .container {
+    &__menuBox {
+        margin: 0 20%;
+    }
+    &__menuTitleBox {
+        @include flex-center;
+    }
+}
+}
+
+// @media only screen and (min-width: $layout-breakpoint-desktop) {
+//     .container {
+//             &__menuBox {
+//                 display: flex;
+//                 justify-content: space-evenly;
+//                 align-items: center;
+//                 overflow: hidden;
+//                 text-overflow: ellipsis;
+                
+//             }
+//             &__menuTitleBox > &__menuTitle{
+                
+//             }   
+//     }
+//     .menuBox__section {
+      
+        
+        
+//     }
+//     .menuBox__section > .command__btn {
+//         display: none;
+//     }
+// }
+

@@ -36,6 +36,7 @@
     }
     &__heart {
       z-index: 2;
+      transform: scale(1.5);
     }
 }
 
@@ -45,13 +46,34 @@
         margin-right: 15px;
     }
     &:hover {
-        font-weight: 0;
-        color: #ff0000;
-        transform-origin: bottom;
+        font-size: 15px;
+        transform-origin: center;
         animation: heart 300ms 0.1s both;
-        
+        -webkit-background-clip:content-box;
+        background-clip: content-box;
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(-190deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);
     }
 }
+
+/* test sur svg heart*/
+
+.svg-heart {
+    width: 15px;
+    height: 15px;
+    &:hover {
+        color: transparent;
+        font-size: 15px;
+        // transform-origin: center;
+        // animation: heart 300ms 0.1s both;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background: linear-gradient(#FF46C1, #9F49B9);
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/*------------------------------------*/
 
 
 #img2-position {
