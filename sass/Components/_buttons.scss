@@ -102,17 +102,35 @@
         text-overflow: ellipsis;
     }
     &--translate1 {
-        animation: button-translateY  800ms 100ms;
+        animation: button-translateY 800ms 100ms;
     }
     &--translate2 {
-        animation: button-translateY  800ms 200ms;
+        animation: button-translateY 800ms 200ms;
     }
     &--translate3 {
-        animation: button-translateY  800ms 300ms;
+        animation: button-translateY 800ms 300ms;
     }
     &--translate4 {
         animation: button-translateY 800ms 400ms;
     } 
+    &--translate5 {
+        animation: button-translateY 800ms 500ms;
+    }
+    &--translate6 {
+        animation: button-translateY 800ms 600ms;
+    }
+    &--translate7 {
+        animation: button-translateY 800ms 700ms;
+    }
+    &--translate8 {
+        animation: button-translateY 800ms 800ms;
+    }
+    &--translate9 {
+        animation: button-translateY 800ms 900ms;
+    }
+    &--translate10 {
+        animation: button-translateY 800ms 1s;
+    }
 }
 
 
@@ -121,9 +139,7 @@
 .textBox {
     &__titles {
         padding: 10px;
-        overflow: hidden;
-        white-space:nowrap;
-        text-overflow: ellipsis;
+        @include word-ellipsis;
     }
     &__infos {
         display: flex;
@@ -163,7 +179,7 @@
 
 .command__btn {
     @include flex-center;
-    margin-top: 10%;
+    padding-bottom: 5em;
 }
 
 #commandBtn {

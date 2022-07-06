@@ -57,27 +57,51 @@
 }
 }
 
-// @media only screen and (min-width: $layout-breakpoint-desktop) {
-//     .container {
-//             &__menuBox {
-//                 display: flex;
-//                 justify-content: space-evenly;
-//                 align-items: center;
-//                 overflow: hidden;
-//                 text-overflow: ellipsis;
+@media only screen and (min-width: $layout-breakpoint-desktop) {
+     .container {
+             &__menuBox {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                @include word-ellipsis;
                 
-//             }
-//             &__menuTitleBox > &__menuTitle{
-                
-//             }   
-//     }
-//     .menuBox__section {
-      
-        
-        
-//     }
-//     .menuBox__section > .command__btn {
-//         display: none;
-//     }
-// }
+             }
+     .btn {
+        &__title {
+            @include word-ellipsis;
+        }
+        &__text {
+            @include word-ellipsis;
+        }
+     }
+     .section__btnBox {
+        width: 400px;
+     }        
+    }
+}   
+
+
+/* > 1140p resolution */
+
+@media only screen and (min-width: $layout-breakpoint-wide) {
+    .container {
+        margin: 0 20%;
+    }
+    .footer{
+    &__section {
+        height: 195px;
+    }
+    &__title {
+        margin-top: 19px;
+    }
+    }
+}
+
+/* 4k resolution  */
+
+@media only screen and (min-width: $layout-breakpoint-4k) {
+    main {
+        height: 86vh;
+    }
+}
 

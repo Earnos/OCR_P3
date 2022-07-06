@@ -22,3 +22,9 @@
 @mixin gradient {
     background: linear-gradient(-190deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);
 }
+
+@mixin word-ellipsis {
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+}
