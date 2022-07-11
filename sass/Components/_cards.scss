@@ -1,5 +1,5 @@
 
-.resto__cardBox {
+.resto__cardbox {
     margin: 0 4%;
 }
 .cards {
@@ -14,7 +14,7 @@
         object-fit: cover;
         object-position: bottom;
     }
-    &__InfoBlock {
+    &__infoblock {
         height: 10%;
         display: flex;
         justify-content: space-between;
@@ -36,18 +36,19 @@
     }
     &__heart {
       z-index: 2;
-      transform: scale(1.5);
+    //   transform: scale(1.5);
+    font-size: 25px;
       padding-right: 15px;
       
     }
 }
 #heart_menu {
-    transform: scale(1.4);
+    font-size: 25px;
 }
 
 .fa-heart {
     &:hover {
-        font-size: 15px;
+        font-size: 25px;
         transform-origin: center;
         animation: heart 300ms 0.1s both;
         background: -webkit-linear-gradient(-190deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);

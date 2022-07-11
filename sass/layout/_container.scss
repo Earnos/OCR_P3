@@ -11,12 +11,12 @@
         padding: 5% 8% 10% 8%;
         margin-bottom: 8%;
     }
-    &__infosTitle {
+    &__infostitle {
         font-size: 1.5em;
         font-weight: 700;
         padding: 20px;
     }
-    &__infosSubtitle {
+    &__infossubtitle {
         font-size: 1.1em;
         font-weight: 400;
     }
@@ -56,12 +56,12 @@
     width: 100%; 
     padding: 15px;
     }
-    &__menuTitleBox {
+    &__menutitlebox {
         @include flex-center;
         justify-content: space-between;
         padding: 15px 0 0 0;       
     }
-    &__menuTitle {
+    &__menutitle {
         @include cursive-font;
         font-weight: normal;
         font-size: 1.9em;
@@ -84,7 +84,7 @@
 
 /*heart icone du menu title box*/
 
-.menuTitle__heart {
+.menutitle__heart {
     transform: scale(1.5);
     margin-right: 10px;
 }

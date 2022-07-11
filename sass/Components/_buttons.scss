@@ -44,7 +44,7 @@
             }
         }
     }
-    &__btnAll {
+    &__btnall {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -83,6 +83,7 @@
         background: #FFFF;
         cursor: pointer;
         overflow: hidden;
+        opacity: 0;
     }
 }
 
@@ -91,7 +92,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    &__textBox {
+    &__textbox {
         display: flex;
         justify-content: space-between;
         height: 100%;
@@ -102,41 +103,41 @@
         text-overflow: ellipsis;
     }
     &--translate1 {
-        animation: button-translateY 800ms 100ms;
+        animation: button-translateY 800ms 100ms forwards;
     }
     &--translate2 {
-        animation: button-translateY 800ms 200ms;
+        animation: button-translateY 800ms 200ms forwards;
     }
     &--translate3 {
-        animation: button-translateY 800ms 300ms;
+        animation: button-translateY 800ms 300ms forwards;
     }
     &--translate4 {
-        animation: button-translateY 800ms 400ms;
+        animation: button-translateY 800ms 400ms forwards;
     } 
     &--translate5 {
-        animation: button-translateY 800ms 500ms;
+        animation: button-translateY 800ms 500ms forwards;
     }
     &--translate6 {
-        animation: button-translateY 800ms 600ms;
+        animation: button-translateY 800ms 600ms forwards;
     }
     &--translate7 {
-        animation: button-translateY 800ms 700ms;
+        animation: button-translateY 800ms 700ms forwards;
     }
     &--translate8 {
-        animation: button-translateY 800ms 800ms;
+        animation: button-translateY 800ms 800ms forwards;
     }
     &--translate9 {
-        animation: button-translateY 800ms 900ms;
+        animation: button-translateY 800ms 900ms forwards;
     }
     &--translate10 {
-        animation: button-translateY 800ms 1s;
+        animation: button-translateY 800ms 1s forwards;
     }
 }
 
 
 /* infos & Check buttons menu pages*/
 
-.textBox {
+.textbox {
     &__titles {
         padding: 10px;
         @include word-ellipsis;
@@ -167,7 +168,7 @@
     visibility: collapse;
     }
 
- .btn__textBox:hover > .textBox__infos > .textBox__check {
+ .btn__textbox:hover > .textbox__infos > .textbox__check {
             width: 66px;
             transition: width .6s;
             & > .fa-circle-check {
@@ -182,7 +183,7 @@
     padding-bottom: 5em;
 }
 
-#commandBtn {
+#commandbtn {
     width: 180px;
 } 
 

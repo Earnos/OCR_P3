@@ -38,7 +38,7 @@
 @keyframes button-translateY {
   0%, 15% {opacity: 0;}
   0% {transform: translateY(50px);}
-  100% {transform: translateY(0);}
+  100% {transform: translateY(0); opacity: 1;}
 }
 
 /* button gradient and box shadows animations */

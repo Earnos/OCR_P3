@@ -23,7 +23,7 @@
             margin-top: 5%;
             
         }
-        &__cardBox {
+        &__cardbox {
             margin-top: 50px;
             display: flex;
             flex-wrap: wrap;
@@ -48,10 +48,10 @@
 
 @media only screen and (min-width: $layout-breakpoint-tablette) and (max-width: $layout-breakpoint-desktop) {
     .container {
-    &__menuBox {
+    &__menubox {
         margin: 0 20%;
     }
-    &__menuTitleBox {
+    &__menutitlebox {
         @include flex-center;
     }
 }
@@ -59,7 +59,7 @@
 
 @media only screen and (min-width: $layout-breakpoint-desktop) {
      .container {
-             &__menuBox {
+             &__menubox {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
