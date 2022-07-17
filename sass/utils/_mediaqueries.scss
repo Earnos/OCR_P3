@@ -43,7 +43,6 @@
         text-align: center;
     }
 }
-
 /* Media for menus pages */
 
 @media only screen and (min-width: $layout-breakpoint-tablette) and (max-width: $layout-breakpoint-desktop) {
@@ -77,6 +76,9 @@
      .section__btnBox {
         width: 400px;
      }        
+    }
+    .new1 {
+        left: 38%;
     }
 }   
 

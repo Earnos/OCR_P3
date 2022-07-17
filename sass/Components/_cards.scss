@@ -36,10 +36,24 @@
     }
     &__heart {
       z-index: 2;
-    //   transform: scale(1.5);
     font-size: 25px;
-      padding-right: 15px;
-      
+      padding-right: 15px;  
+    }
+    &__new {
+        font-size: 15px;
+        width: 88px;
+        height: 33px;
+        background: #99E2D0;
+        position: absolute;
+        color: darken(#99E2D0, 35%);
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        ;
+        align-items: center;
+        border-radius: 5%;
+        right: 10%;
+        margin-top: 15px;
     }
 }
 #heart_menu {
@@ -50,7 +64,7 @@
     &:hover {
         font-size: 25px;
         transform-origin: center;
-        animation: heart 300ms 0.1s both;
+        animation: heart 300ms 0.2s both;
         background: -webkit-linear-gradient(-190deg, #FF46C1 0%, #FF79DA 20%, #9F49B9 100%);
         -webkit-background-clip: text;
         background-clip: text;
